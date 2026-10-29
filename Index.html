@@ -1,0 +1,1895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Summer Glow Guest | In-Villa & Terrace Dining — Nuwara Eliya</title>
+  <style>
+    :root {
+      --hunter-deep: #14241B;
+      --hunter-primary: #1D3528;
+      --hunter-soft: #2A4736;
+      --amber-gold: #C88A4B;
+      --amber-warm: #B06D2B;
+      --amber-glow: #E6B88A;
+      --wood-dark: #4A321F;
+      --ivory-bg: #FAF6F0;
+      --ivory-card: #FFFDF9;
+      --ivory-Alt: #F2EAE0;
+      --text-main: #222623;
+      --text-muted: #5C645E;
+      --badge-sig-bg: #2B1810;
+      --badge-sig-text: #F5CBA7;
+      --badge-fav-bg: #7E3517;
+      --badge-fav-text: #FFE6D5;
+      --whatsapp-green: #1FA855;
+      --whatsapp-dark: #128C7E;
+      --radius-lg: 16px;
+      --radius-md: 12px;
+      --shadow-soft: 0 8px 24px rgba(20, 36, 27, 0.08);
+      --shadow-highlight: 0 10px 28px rgba(176, 109, 43, 0.16);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background-color: var(--ivory-bg);
+      color: var(--text-main);
+      font-family: 'Georgia', 'Palatino Linotype', 'Book Antiqua', serif;
+    }
+
+    body {
+      max-width: 680px;
+      margin: 0 auto;
+      background-color: var(--ivory-bg);
+      min-height: 100vh;
+      box-shadow: 0 0 40px rgba(0, 0, 0, 0.12);
+      padding-bottom: 110px;
+    }
+
+    /* PREVENT BROKEN IMAGE ALT TEXT OVERLAP */
+    img {
+      color: transparent;
+      background: linear-gradient(135deg, #1E3528 0%, #2C1D12 100%);
+    }
+
+    /* HERO HEADER */
+    .hero {
+      position: relative;
+      background: linear-gradient(180deg, rgba(20, 36, 27, 0.72) 0%, rgba(20, 36, 27, 0.94) 100%),
+                  url('https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=1000&q=80') center/cover no-repeat;
+      color: var(--ivory-bg);
+      padding: 36px 22px 28px;
+      text-align: center;
+      border-bottom: 4px solid var(--amber-gold);
+    }
+
+    .hero-eyebrow {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 0.72rem;
+      color: var(--amber-glow);
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .hero h1 {
+      font-size: 2.05rem;
+      font-weight: normal;
+      letter-spacing: 0.8px;
+      margin-bottom: 8px;
+      color: #FFFFFF;
+    }
+
+    .hero-subtitle {
+      font-size: 0.95rem;
+      font-style: italic;
+      color: #E2DCD3;
+      max-width: 460px;
+      margin: 0 auto 16px;
+      line-height: 1.5;
+    }
+
+    .weather-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 253, 249, 0.12);
+      border: 1px solid rgba(230, 184, 138, 0.35);
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 0.78rem;
+      color: var(--ivory-bg);
+      backdrop-filter: blur(4px);
+    }
+
+    /* GOLDEN TRIANGLE SPOTLIGHT CAROUSEL */
+    .golden-triangle {
+      background: var(--hunter-deep);
+      padding: 20px 18px 24px;
+      color: var(--ivory-bg);
+      border-bottom: 1px solid rgba(200, 138, 75, 0.3);
+    }
+
+    .gt-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 14px;
+    }
+
+    .gt-title {
+      font-size: 1.15rem;
+      color: var(--amber-glow);
+      letter-spacing: 0.5px;
+    }
+
+    .gt-subtitle {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 0.75rem;
+      color: #B9C4BC;
+    }
+
+    .gt-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 14px;
+    }
+
+    .gt-card {
+      background: linear-gradient(145deg, #1E3528 0%, #15251C 100%);
+      border: 1px solid rgba(200, 138, 75, 0.55);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    }
+
+    .gt-card img {
+      width: 100%;
+      height: 145px;
+      object-fit: cover;
+      display: block;
+      filter: contrast(1.04) sepia(0.08);
+    }
+
+    .gt-card-body {
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .gt-badge {
+      display: inline-block;
+      align-self: flex-start;
+      background: var(--amber-gold);
+      color: var(--hunter-deep);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 0.68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      padding: 3px 8px;
+      border-radius: 4px;
+      margin-bottom: 6px;
+    }
+
+    .gt-card h3 {
+      font-size: 1.08rem;
+      color: #FFFFFF;
+      margin-bottom: 6px;
+      line-height: 1.3;
+    }
+
+    .gt-card p {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 0.84rem;
+      color: #D7E0DA;
+      line-height: 1.45;
+      flex: 1;
+    }
+
+    .inline-price-light {
+      font-weight: 700;
+      color: var(--amber-glow);
+      font-family: 'Georgia', serif;
+      font-size: 0.96rem;
+      margin-left: 4px;
+    }
+
+    /* STICKY SEARCH & NAVIGATION */
+    .sticky-controls {
+      position: sticky;
+      top: 0;
+      z-index: 90;
+      background: rgba(250, 246, 240, 0.96);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid #E2D9CC;
+      padding: 12px 16px 10px;
+      box-shadow: 0 4px 14px rgba(20, 36, 27, 0.06);
+    }
+
+    .search-row {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+
+    .search-input-wrap {
+      position: relative;
+      flex: 1;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 11px 14px 11px 38px;
+      border-radius: 999px;
+      border: 1px solid #C8B9A6;
+      background: #FFFFFF;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 0.92rem;
+      color: var(--text-main);
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .search-input:focus {
+      border-color: var(--hunter-primary);
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 13px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      pointer-events: none;
+    }
+
+    .filter-pills {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding-bottom: 4px;
+      scrollbar-width: none;
+    }
+
+    .filter-pills::-webkit-scrollbar {
+      display: none;
+    }
+
+    .nav-pill {
+      flex: 0 0 auto;
+      padding: 7px 14px;
+      border-radius: 999px;
+      background: var(--ivory-Alt);
+      border: 1px solid #D9CEC1;
+      color: var(--hunter-primary);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .nav-pill:hover,
+    .nav-pill.active {
+      background: var(--hunter-primary);
+      color: #FFFFFF;
+      border-color: var(--hunter-primary);
+    }
+
+    /* MENU SECTIONS (ACCORDION CARDS) */
+    .menu-container {
+      padding: 16px 14px;
+    }
+
+    .menu-section {
+      background: var(--ivory-card);
+      border: 1px solid #E4DBD0;
+      border-radius: var(--radius-lg);
+      margin-bottom: 18px;
+      overflow: hidden;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .section-banner {
+      position: relative;
+      height: 128px;
+      overflow: hidden;
+      cursor: pointer;
+      background: linear-gradient(135deg, #14241B 0%, #2A4736 100%);
+    }
+
+    .section-banner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      filter: brightness(0.68) contrast(1.05);
+      transition: transform 0.35s ease;
+    }
+
+    .section-banner:hover img {
+      transform: scale(1.03);
+    }
+
+    .section-banner-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, rgba(20, 36, 27, 0.88) 0%, rgba(20, 36, 27, 0.45) 70%, rgba(20, 36, 27, 0.7) 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 16px 20px;
+      color: #FFFFFF;
+    }
+
+    .section-Header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .section-title {
+      font-size: 1.32rem;
+      letter-spacing: 0.4px;
+      color: #FFFFFF;
+    }
+
+    .section-sub {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 0.8rem;
+      color: var(--amber-glow);
+      margin-top: 4px;
+    }
+
+    .accordion-toggle {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.16);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.95rem;
+      color: #FFFFFF;
+      transition: transform 0.25s ease;
+    }
+
+    .menu-section.collapsed .accordion-toggle {
+      transform: rotate(-90deg);
+    }
+
+    .menu-section.collapsed .section-items {
+      display: none;
+    }
+
+    .section-items {
+      padding: 18px 16px 8px;
+    }
+
+    /* MENU ITEMS */
+    .menu-item {
+      padding: 14px 0;
+      border-bottom: 1px dashed #DFD5C8;
+    }
+
+    .menu-item:last-child {
+      border-bottom: none;
+    }
+
+    /* HIGHLIGHTED SIGNATURE FRAME */
+    .menu-item.highlight-box {
+      background: linear-gradient(135deg, #FFFBF5 0%, #F7EFE4 100%);
+      border: 1.5px solid var(--amber-gold);
+      border-radius: var(--radius-md);
+      padding: 15px;
+      margin: 6px 0 16px;
+      box-shadow: var(--shadow-highlight);
+    }
+
+    .signature-thumb {
+      width: 100%;
+      height: 155px;
+      object-fit: cover;
+      display: block;
+      border-radius: 8px;
+      margin-bottom: 12px;
+      border: 1px solid rgba(200, 138, 75, 0.35);
+    }
+
+    .badges-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 6px;
+    }
+
+    .badge {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 3px 9px;
+      border-radius: 5px;
+      letter-spacing: 0.4px;
+    }
+
+    .badge-signature {
+      background: var(--badge-sig-bg);
+      color: var(--badge-sig-text);
+    }
+
+    .badge-favorite {
+      background: var(--badge-fav-bg);
+      color: var(--badge-fav-text);
+    }
+
+    .badge-bundle {
+      background: #E5EFE8;
+      color: var(--hunter-primary);
+      border: 1px solid #BDD1C3;
+    }
+
+    .item-title {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: var(--hunter-deep);
+      line-height: 1.35;
+      margin-bottom: 5px;
+    }
+
+    .item-desc {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+
+    /* PSYCHOLOGY PRICE STYLING: Nested inline next to description, no currency symbol */
+    .price-nested {
+      display: inline;
+      font-family: 'Georgia', serif;
+      font-weight: 700;
+      font-size: 0.98rem;
+      color: var(--wood-dark);
+      margin-left: 5px;
+      letter-spacing: 0.2px;
+    }
+
+    .sub-group-label {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 0.76rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--amber-warm);
+      font-weight: 700;
+      margin: 14px 0 6px;
+      padding-bottom: 4px;
+      border-bottom: 2px solid #EFE6DA;
+    }
+
+    /* INTERACTIVE ADD-TO-ORDER CONTROLS */
+    .order-action-row {
+      margin-top: 10px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .add-order-btn {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 7px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--amber-gold);
+      background: var(--ivory-card);
+      color: var(--hunter-primary);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: all 0.18s ease;
+      box-shadow: 0 2px 6px rgba(20, 36, 27, 0.06);
+    }
+
+    .gt-card .add-order-btn {
+      background: rgba(255, 253, 249, 0.12);
+      color: var(--amber-glow);
+      border-color: rgba(230, 184, 138, 0.5);
+    }
+
+    .add-order-btn:active {
+      transform: scale(0.96);
+    }
+
+    .qty-stepper {
+      display: inline-flex;
+      align-items: center;
+      background: var(--hunter-primary);
+      color: #FFFFFF;
+      border-radius: 999px;
+      padding: 3px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      box-shadow: 0 3px 10px rgba(20, 36, 27, 0.18);
+    }
+
+    .gt-card .qty-stepper {
+      background: var(--amber-gold);
+      color: var(--hunter-deep);
+    }
+
+    .stepper-btn {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      border: none;
+      background: rgba(255, 255, 255, 0.18);
+      color: inherit;
+      font-size: 1.05rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 1;
+    }
+
+    .gt-card .stepper-btn {
+      background: rgba(20, 36, 27, 0.15);
+    }
+
+    .stepper-count {
+      padding: 0 11px;
+      font-size: 0.84rem;
+      font-weight: 700;
+    }
+
+    /* FOOTER & SERVICE CHARGE */
+    .menu-footer {
+      margin: 24px 14px 0;
+      padding: 24px 20px;
+      background: var(--hunter-deep);
+      color: var(--ivory-bg);
+      border-radius: var(--radius-lg);
+      text-align: center;
+      border: 1px solid var(--amber-gold);
+    }
+
+    .service-charge-note {
+      font-size: 1.02rem;
+      color: var(--amber-glow);
+      font-weight: bold;
+      margin-bottom: 8px;
+      letter-spacing: 0.4px;
+    }
+
+    .footer-sub {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 0.82rem;
+      color: #C9D2CC;
+      line-height: 1.5;
+    }
+
+    /* FLOATING WHATSAPP STICKY BAR */
+    .floating-wa-wrap {
+      position: fixed;
+      bottom: 14px;
+      left: 0;
+      right: 0;
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 0 14px;
+      z-index: 150;
+      pointer-events: none;
+    }
+
+    .wa-direct-pill {
+      pointer-events: auto;
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      background: linear-gradient(135deg, var(--whatsapp-green) 0%, var(--whatsapp-dark) 100%);
+      color: #FFFFFF;
+      text-decoration: none;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 0.86rem;
+      font-weight: 700;
+      padding: 12px 18px;
+      border-radius: 999px;
+      box-shadow: 0 8px 24px rgba(18, 140, 126, 0.38);
+      width: fit-content;
+      border: 1.5px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .wa-cart-bar {
+      pointer-events: auto;
+      display: none;
+      align-items: center;
+      justify-content: space-between;
+      background: linear-gradient(135deg, #14241B 0%, #1F3A2B 100%);
+      color: #FFFFFF;
+      padding: 12px 16px;
+      border-radius: 16px;
+      border: 1.5px solid var(--amber-gold);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+      cursor: pointer;
+    }
+
+    .wa-cart-info {
+      display: flex;
+      flex-direction: column;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    .wa-cart-count {
+      font-size: 0.78rem;
+      color: var(--amber-glow);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+    }
+
+    .wa-cart-total {
+      font-family: 'Georgia', serif;
+      font-size: 1.06rem;
+      font-weight: bold;
+      color: #FFFFFF;
+      margin-top: 2px;
+    }
+
+    .wa-cart-cta {
+      background: var(--whatsapp-green);
+      color: #FFFFFF;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 0.86rem;
+      font-weight: 700;
+      padding: 10px 16px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 4px 12px rgba(31, 168, 85, 0.35);
+    }
+
+    /* ORDER DRAWER MODAL */
+    .order-modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(12, 22, 16, 0.72);
+      backdrop-filter: blur(4px);
+      z-index: 200;
+      display: none;
+      align-items: flex-end;
+      justify-content: center;
+    }
+
+    .order-modal-backdrop.open {
+      display: flex;
+    }
+
+    .order-sheet {
+      width: 100%;
+      max-width: 680px;
+      background: var(--ivory-card);
+      border-radius: 22px 22px 0 0;
+      border-top: 3px solid var(--amber-gold);
+      max-height: 88vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      animation: slideUp 0.25s ease-out;
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(100%); }
+      to { transform: translateY(0); }
+    }
+
+    .sheet-header {
+      padding: 18px 20px 14px;
+      background: var(--hunter-deep);
+      color: #FFFFFF;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .sheet-header h3 {
+      font-size: 1.2rem;
+      color: var(--amber-glow);
+      font-weight: normal;
+    }
+
+    .sheet-close {
+      background: rgba(255, 255, 255, 0.14);
+      color: #FFFFFF;
+      border: none;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      font-size: 1.1rem;
+      cursor: pointer;
+    }
+
+    .sheet-body {
+      padding: 16px 20px;
+      overflow-y: auto;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    .cart-item-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px dashed #DFD5C8;
+      gap: 10px;
+    }
+
+    .cart-item-name {
+      font-family: 'Georgia', serif;
+      font-size: 0.95rem;
+      font-weight: bold;
+      color: var(--hunter-deep);
+    }
+
+    .cart-item-sub {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    .bill-summary {
+      background: var(--ivory-Alt);
+      padding: 12px 14px;
+      border-radius: 12px;
+      margin: 14px 0;
+      font-size: 0.88rem;
+    }
+
+    .bill-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 6px;
+      color: var(--text-muted);
+    }
+
+    .bill-row.grand {
+      margin-top: 8px;
+      padding-top: 8px;
+      border-top: 1px solid #D5C8B8;
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--hunter-deep);
+    }
+
+    .form-group {
+      margin-bottom: 12px;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: var(--hunter-primary);
+      margin-bottom: 5px;
+    }
+
+    .form-select,
+    .form-input {
+      width: 100%;
+      padding: 11px 12px;
+      border-radius: 10px;
+      border: 1px solid #C8B9A6;
+      background: #FFFFFF;
+      font-size: 0.9rem;
+      color: var(--text-main);
+      font-family: inherit;
+    }
+
+    .sheet-footer {
+      padding: 14px 20px 20px;
+      background: var(--ivory-card);
+      border-top: 1px solid #E4DBD0;
+      display: flex;
+      gap: 10px;
+    }
+
+    .clear-cart-btn {
+      padding: 13px 16px;
+      border-radius: 12px;
+      border: 1px solid #D0C4B4;
+      background: var(--ivory-Alt);
+      color: var(--text-muted);
+      font-weight: 600;
+      font-size: 0.85rem;
+      cursor: pointer;
+    }
+
+    .send-wa-btn {
+      flex: 1;
+      padding: 14px 18px;
+      border-radius: 12px;
+      border: none;
+      background: linear-gradient(135deg, var(--whatsapp-green) 0%, var(--whatsapp-dark) 100%);
+      color: #FFFFFF;
+      font-weight: 700;
+      font-size: 0.95rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      box-shadow: 0 6px 18px rgba(31, 168, 85, 0.32);
+    }
+
+    @media (max-width: 480px) {
+      .hero h1 {
+        font-size: 1.75rem;
+      }
+      .gt-cards {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO HEADER -->
+  <header class="hero">
+    <span class="hero-eyebrow">Nuwara Eliya • Boutique Villa Retreat</span>
+    <h1>Summer Glow Guest</h1>
+    <p class="hero-subtitle">Hearty hearthside cooking, slow-simmered Ceylon spices &amp; piping-hot hill-country comfort crafted fresh to order.</p>
+    <div class="weather-pill">
+      <span>🌫️ Tap Any Dish Below to Build Your Room or Terrace Order</span>
+    </div>
+  </header>
+
+  <!-- GOLDEN TRIANGLE FOCUS ZONE -->
+  <section class="golden-triangle" aria-label="Chef's High-Altitude Signatures">
+    <div class="gt-header">
+      <h2 class="gt-title">✨ Hearthside Signatures</h2>
+      <span class="gt-subtitle">Most-Loved Mountain Warmers</span>
+    </div>
+    <div class="gt-cards">
+      <div class="gt-card">
+        <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=700&q=80" alt="Slow-Simmered Hill-Country Mutton Curry" onerror="this.style.display='none'" />
+        <div class="gt-card-body">
+          <span class="gt-badge">⭐ Summer Glow Signature • Feast for 2</span>
+          <h3>Slow-Braised Hill-Country Mutton Curry</h3>
+          <p>Tender bone-in mutton slow-simmered for hours in roasted Upcountry spices, dark coconut gravy, and fragrant curry leaves.<span class="inline-price-light">3000</span></p>
+        </div>
+      </div>
+      <div class="gt-card">
+        <img src="https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?auto=format&fit=crop&w=700&q=80" alt="Baked Chicken Cheese Pasta" onerror="this.style.display='none'" />
+        <div class="gt-card-body">
+          <span class="gt-badge">🔥 Terrace Favorite • Individual Comfort</span>
+          <h3>Baked Alpine Chicken Cheese Pasta</h3>
+          <p>Al dente pasta folded with pan-seared chicken strips, velvety garlic cream, and a bubbling blanket of melted golden cheese.<span class="inline-price-light">1700</span></p>
+        </div>
+      </div>
+      <div class="gt-card">
+        <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=700&q=80" alt="Piping hot Cream of Chicken Soup" onerror="this.style.display='none'" />
+        <div class="gt-card-body">
+          <span class="gt-badge">🏔️ Mist Warmer • Starter</span>
+          <h3>Velvety Hearthside Cream of Chicken Soup</h3>
+          <p>Rich, slow-poached chicken stock whisked with farm-fresh cream, cracked black pepper, and tender shredded chicken.<span class="inline-price-light">1000</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STICKY MOBILE NAVIGATION & LIVE SEARCH -->
+  <div class="sticky-controls">
+    <div class="search-row">
+      <div class="search-input-wrap">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="menuSearch" class="search-input" placeholder="Craving kottu, mutton, soup, pasta, tea..." aria-label="Search menu items" />
+      </div>
+    </div>
+    <nav class="filter-pills" aria-label="Menu Categories">
+      <button type="button" class="nav-pill active" data-filter="all">All Dishes</button>
+      <button type="button" class="nav-pill" data-filter="signature">⭐ Signatures</button>
+      <button type="button" class="nav-pill" data-filter="sharing">🍲 Feast for 2</button>
+      <a href="#sec-breakfast" class="nav-pill">Breakfast</a>
+      <a href="#sec-breakfast-curry" class="nav-pill">Morning Curries</a>
+      <a href="#sec-soups-salads" class="nav-pill">Soups &amp; Salads</a>
+      <a href="#sec-pasta-sandwiches" class="nav-pill">Pasta &amp; Sandwiches</a>
+      <a href="#sec-lunch-curry" class="nav-pill">Rice &amp; Curry</a>
+      <a href="#sec-friedrice-nasi" class="nav-pill">Fried Rice &amp; Nasi</a>
+      <a href="#sec-devilled" class="nav-pill">Devilled &amp; Bites</a>
+      <a href="#sec-kottu-noodles" class="nav-pill">Kottu &amp; Noodles</a>
+      <a href="#sec-indian" class="nav-pill">Biriyani &amp; Hoppers</a>
+      <a href="#sec-beverages" class="nav-pill">Tea &amp; Juices</a>
+    </nav>
+  </div>
+
+  <main class="menu-container" id="menuRoot">
+
+    <!-- 1. BREAKFAST & MORNING HEARTH -->
+    <section class="menu-section" id="sec-breakfast">
+      <div class="section-banner" onclick="toggleSection(this)">
+        <img src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=900&q=80" alt="Warm European Villa Continental Breakfast" onerror="this.style.display='none'" />
+        <div class="section-banner-overlay">
+          <div class="section-Header-row">
+            <div>
+              <h2 class="section-title">Villa Morning Breakfasts</h2>
+              <p class="section-sub">Hearth-warmed classics for crisp Nuwara Eliya mornings</p>
+            </div>
+            <span class="accordion-toggle">▾</span>
+          </div>
+        </div>
+      </div>
+      <div class="section-items">
+        <article class="menu-item highlight-box" data-tags="signature">
+          <img class="signature-thumb" src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80" alt="Grand Villa Continental Breakfast Table" onerror="this.style.display='none'" />
+          <div class="badges-wrap">
+            <span class="badge badge-signature">⭐ Summer Glow Signature</span>
+            <span class="badge badge-bundle">Complete Morning Spread</span>
+          </div>
+          <h3 class="item-title">The Grand Villa Continental Breakfast</h3>
+          <p class="item-desc">Start your misty highland morning with orchard-fresh seasonal fruits and chilled juice, followed by warm toasted or herb-garlic bread with creamy butter and fruit preserves, farm eggs cooked your way, and sizzling chicken bacon or savory sausages.<span class="price-nested">2250</span></p>
+        </article>
+
+        <article class="menu-item">
+          <div class="badges-wrap">
+            <span class="badge badge-favorite">🔥 Terrace Favorite</span>
+            <span class="badge badge-bundle">Individual Portion</span>
+          </div>
+          <h3 class="item-title">Steamed Lace String Hoppers</h3>
+          <p class="item-desc">Delicate, pillowy steamed rice-flour nests served piping hot with your choice of comforting spiced potato curry or velvety golden dhal, accompanied by freshly grated coconut pol sampol.<span class="price-nested">800</span></p>
+        </article>
+
+        <article class="menu-item">
+          <h3 class="item-title">Rustic Griddle Pol Rotti</h3>
+          <p class="item-desc">Warm, hand-patted coconut flatbreads toasted on an iron skillet until golden, paired with creamy slow-cooked dhal curry and fiery caramelized onion lunu miris.<span class="price-nested">700</span></p>
+        </article>
+
+        <article class="menu-item">
+          <h3 class="item-title">Traditional Ceylon Milk Rice (Kiribath)</h3>
+          <p class="item-desc">Rich, comforting diamond-cut rice simmered in thick first-press coconut milk, served warm alongside smoky chili-and-onion katta sampol.<span class="price-nested">700</span></p>
+        </article>
+
+        <article class="menu-item">
+          <h3 class="item-title">Country Steamed White or Red Rice</h3>
+          <p class="item-desc">Fluffy, steaming heirloom red or white rice paired with comforting home-style dhal curry or creamy hill-country potato curry.<span class="price-nested">700</span></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 2. CURRY CORNER BREAKFAST (SERVING 2 PERSONS) -->
+    <section class="menu-section" id="sec-breakfast-curry">
+      <div class="section-banner" onclick="toggleSection(this)">
+        <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=900&q=80" alt="Rich Sri Lankan Claypot Curries" onerror="this.style.display='none'" />
+        <div class="section-banner-overlay">
+          <div class="section-Header-row">
+            <div>
+              <h2 class="section-title">Morning Claypot Curry Corner</h2>
+              <p class="section-sub">Generous sharing pots crafted for 2 guests • Pair with rotti, hoppers or rice</p>
+            </div>
+            <span class="accordion-toggle">▾</span>
+          </div>
+        </div>
+      </div>
+      <div class="section-items">
+        <article class="menu-item highlight-box" data-tags="signature sharing">
+          <img class="signature-thumb" src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=800&q=80" alt="Slow-Braised Hill-Country Mutton Curry" onerror="this.style.display='none'" />
+          <div class="badges-wrap">
+            <span class="badge badge-signature">⭐ Summer Glow Signature</span>
+            <span class="badge badge-bundle">Generous Sharing Pot for 2</span>
+          </div>
+          <h3 class="item-title">Slow-Braised Hill-Country Mutton Curry</h3>
+          <p class="item-desc">Our crown jewel curry: succulent mutton cuts slow-simmered in aromatic dark-roasted Ceylon spices, pandan leaf, and rich coconut gravy until melt-in-the-mouth tender.<span class="price-nested">3000</span></p>
+        </article>
+
+        <article class="menu-item" data-tags="sharing">
+          <div class="badges-wrap">
+            <span class="badge badge-favorite">🔥 Terrace Favorite</span>
+            <span class="badge badge-bundle">Sharing Pot for 2</span>
+          </div>
+          <h3 class="item-title">Peppered Highland Beef Curry</h3>
+          <p class="item-desc">Hearty chunks of beef gently braised with crushed black pepper, roasted coriander, lemongrass, and a deeply warming spiced gravy.<span class="price-nested">1800</span></p>
+        </article>
+
+        <article class="menu-item" data-tags="sharing">
+          <div class="badges-wrap">
+            <span class="badge badge-bundle">Sharing Pot for 2</span>
+          </div>
+          <h3 class="item-title">Southern Heritage Fish Ambul Thiyal</h3>
+          <p class="item-desc">Firm ocean fish cubes slow-reduced in an earthen pot with smoky goraka (tamarind), cracked black pepper, and aromatic cinnamon leaves.<span class="price-nested">1300</span></p>
+        </article>
+
+        <article class="menu-item" data-tags="sharing">
+          <div class="badges-wrap">
+            <span class="badge badge-bundle">Sharing Pot for 2</span>
+          </div>
+          <h3 class="item-title">Ceylon Golden Coconut Fish Curry</h3>
+          <p class="item-desc">Fresh fish fillets poached gently in a velvety turmeric, fenugreek, and coconut milk gravy infused with green chilies and curry leaves.<span class="price-nested">1300</span></p>
+        </article>
+
+        <article class="menu-item" data-tags="sharing">
+          <div class="badges-wrap">
+            <span class="badge badge-bundle">Sharing Pot for 2</span>
+          </div>
+          <h3 class="item-title">Village-Style Roasted Spice Chicken Curry</h3>
+          <p class="item-desc">Homestyle bone-in chicken simmered in fragrant roasted Ceylon curry powder, ginger, garlic, and rich tomato-coconut gravy.<span class="price-nested">950</span></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 3. SOUP & SALAD STARTER CORNER -->
+    <section class="menu-section" id="sec-soups-salads">
+      <div class="section-banner" onclick="toggleSection(this)">
+        <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=900&q=80" alt="Steaming Artisan Soup and Garden Salads" onerror="this.style.display='none'" />
+        <div class="section-banner-overlay">
+          <div class="section-Header-row">
+            <div>
+              <h2 class="section-title">Piping-Hot Soups &amp; Crisp Starters</h2>
+              <p class="section-sub">Soul-warming broths &amp; locally-grown Nuwara Eliya harvest greens</p>
+            </div>
+            <span class="accordion-toggle">▾</span>
+          </div>
+        </div>
+      </div>
+      <div class="section-items">
+        <div class="sub-group-label">Steaming Kettle Soups (Individual Bowl)</div>
+
+        <article class="menu-item highlight-box" data-tags="signature">
+          <img class="signature-thumb" src="https://images.unsplash.com/photo-1603105037880-880cd4edfb0d?auto=format&fit=crop&w=800&q=80" alt="Velvety Cream of Chicken Soup" onerror="this.style.display='none'" />
+          <div class="badges-wrap">
+            <span class="badge badge-signature">⭐ Summer Glow Signature</span>
+            <span class="badge badge-bundle">Piping-Hot Individual Bowl</span>
+          </div>
+          <h3 class="item-title">Velvety Hearthside Cream of Chicken Soup</h3>
+          <p class="item-desc">Our #1 chilly-evening comfort: rich chicken reduction whisked with velvety dairy cream, tender shredded chicken breast, and freshly cracked mountain pepper.<span class="price-nested">1000</span></p>
+        </article>
+
+        <article class="menu-item">
+          <div class="badges-wrap">
+            <span class="badge badge-favorite">🔥 Terrace Favorite</span>
+          </div>
+          <h3 class="item-title">Silky Chicken &amp; Egg Drop Broth</h3>
+          <p class="item-desc">A soothing, golden aromatic chicken broth swirled with delicate ribbons of farm egg, shredded chicken, and crisp spring scallions.<span class="price-nested">1000</span></p>
+        </article>
+
+        <article class="menu-item">
+          <h3 class="item-title">Caramelized Roasted Garlic Soup</h3>
+          <p class="item-desc">Sweet, slow-roasted garlic cloves blended into a smooth, fragrant herb-and-potato velouté that warms you from the inside out.<span class="price-nested">800</span></p>
+        </article>
+
+        <article class="menu-item">
+          <h3 class="item-title">Nuwara Eliya Harvest Vegetable Soup</h3>
+          <p class="item-desc">Locally-grown hill-country carrots, leeks, and garden beans simmered in a clear, herb-infused vegetable stock.<span class="price-nested">800</span></p>
+        </article>
+
+        <div class="sub-group-label">Crisp Highland Salads</div>
+
+        <article class="menu-item">
+          <div class="badges-wrap">
+            <span class="badge badge-signature">⭐ Chef's Selection</span>
+          </div>
+          <h3 class="item-title">Coastal-Meets-Highland Mixed Seafood Salad</h3>
+          <p class="item-desc">Poached prawns and tender ocean fish tossed with crisp Nuwara Eliya lettuce, bell peppers, and a zesty lime-herb vinaigrette.<span class="price-nested">1500</span></p>
+        </article>
+
+        <article class="menu-item">
+          <h3 class="item-title">Warm-Grilled Chicken Caesar Salad</h3>
+          <p class="item-desc">Crisp hill-station romaine leaves tossed in creamy Caesar dressing, topped with pan-seared chicken strips, toasted garlic croutons, and savory cheese.<span class="price-nested">1200</span></p>
+        </article>
+
+        <article class="menu-item">
+          <h3 class="item-title">Summer Glow Nuwara Eliya Mixed Vegetable Salad</h3>
+          <p class="item-desc">A vibrant crunch of freshly harvested high-altitude vegetables from neighboring farms, dressed lightly in lemon and olive oil.<span class="price-nested">800</span></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 4. PASTA & SANDWICH CORNER -->
+    <section class="menu-section" id="sec-pasta-sandwiches">
+      <div class="section-banner" onclick="toggleSection(this)">
+        <img src="https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?auto=format&fit=crop&w=900&q=80" alt="Rich Baked Cheese Pasta and Club Sandwiches" onerror="this.style.display='none'" />
+        <div class="section-banner-overlay">
+          <div class="section-Header-row">
+            <div>
+              <h2 class="section-title">Artisan Pastas &amp; Toasted Sandwiches</h2>
+              <p class="section-sub">Indulgent European villa comforts &amp; crisp golden fries</p>
+            </div>
+            <span class="accordion-toggle">▾</span>
+          </div>
+        </div>
+      </div>
+      <div class="section-items">
+        <div class="sub-group-label">Skillet &amp; Oven Pastas (Individual Portion)</div>
+
+        <article class="menu-item highlight-box" data-tags="signature">
+          <img class="signature-thumb" src="https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?auto=format&fit=crop&w=800&q=80" alt="Chicken Cheese Pasta" onerror="this.style.display='none'" />
+          <div class="badges-wrap">
+            <span class="badge badge-signature">⭐ Summer Glow Signature</span>
+            <span class="badge badge-favorite">🔥 Most Ordered</span>
+          </div>
+          <h3 class="item-title">Baked Alpine Chicken Cheese Pasta</h3>
+          <p class="item-desc">Tender pasta enveloped in a rich roasted-garlic cream sauce with juicy seared chicken, crowned with a generous layer of bubbling melted cheese.<span class="price-nested">1700</span></p>
+        </article>
+
+        <article class="menu-item">
+          <h3 class="item-title">Velvety Chicken Creamy Pasta</h3>
+          <p class="item-desc">Al dente pasta tossed in a silky herb-and-butter cream reduction with sautéed chicken pieces and sweet highland leeks.<span class="price-nested">1200</span></p>
+        </article>
+
+        <article class="menu-item">
+          <h3 class="item-title">Classic Herb Creamy Pasta</h3>
+          <p class="item-desc">Comforting pasta folded into a smooth, buttery white cream sauce accented with garlic, garden herbs, and black pepper.<span class="price-nested">900</span></p>
+        </article>
+
+        <div class="sub-group-label">Toasted Villa Sandwiches &amp; Fries</div>
+
+        <article class="menu-item">
+          <div class="badges-wrap">
+            <span class="badge badge-favorite">🔥 Terrace Favorite</span>
+            <span class="badge badge-bundle">Served with Golden Fries</span>
+          </div>
+          <h3 class="item-title">Warm-Toasted Roast Chicken Club Sandwich</h3>
+          <p class="item-desc">Seasoned shredded chicken folded with creamy dressing and crisp lettuce between golden-toasted bread, served alongside a hot portion of crunchy French fries.<span class="price-nested">1190</span></p>
+        </article>
+
+        <article class="menu-item">
+          <div class="badges-wrap">
+            <span class="badge badge-bundle">Served with Golden Fries</span>
+          </div>
+          <h3 class="item-title">Melted Cheese &amp; Vine-Tomato Sandwich</h3>
+          <p class="item-desc">Warm melted cheese and juicy sliced hill-country tomatoes pressed inside buttery toasted bread, accompanied by crispy French fries.<span class="price-nested">1090</span></p>
+        </article>
+
+        <article class="menu-item">
+          <div class="badges-wrap">
+            <span class="badge badge-bundle">Served with Golden Fries</span>
+          </div>
+          <h3 class="item-title">Country Farm Egg Sandwich</h3>
+          <p class="item-desc">Fluffy seasoned farm eggs and cracked pepper layered in warm toasted bread, served with a generous side of golden French fries.<span class="price-nested">990</span></p>
+        </article>
+
+        <article class="menu-item">
+          <div class="badges-wrap">
+            <span class="badge badge-bundle">250g Sharing Basket</span>
+          </div>
+          <h3 class="item-title">Basket of Crisp Upcountry French Fries</h3>
+          <p class="item-desc">A hearty 250g platter of golden, crispy-on-the-outside, fluffy-on-the-inside potato fries seasoned with sea salt—ideal for sharing over tea.<span class="price-nested">1200</span></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 5. SRI LANKAN LUNCH RICE & CURRY (SERVING 2 PERSONS) -->
+    <section class="menu-section" id="sec-lunch-curry">
+      <div class="section-banner" onclick="toggleSection(this)">
+        <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=900&q=80" alt="Authentic Sri Lankan Rice and Curry Feast" onerror="this.style.display='none'" />
+        <div class="section-banner-overlay">
+          <div class="section-Header-row">
+            <div>
+              <h2 class="section-title">Ceylon Heritage Rice &amp; Curry Feasts</h2>
+              <p class="section-sub">Generous Feast for 2 • Served with seasonal hill-country vegetable accompaniments</p>
+            </div>
+            <span class="accordion-toggle">▾</span>
+          </div>
+        </div>
+      </div>
+      <div class="section-items">
+        <article class="menu-item highlight-box" data-tags="signature sharing">
+          <div class="badges-wrap">
+            <span class="badge badge-signature">⭐ Summer Glow Signature</span>
+            <span class="badge badge-bundle">Generous Feast for 2</span>
+          </div>
+          <h3 class="item-title">Spiced Ocean Prawns Rice &amp; Curry Feast</h3>
+          <p class="item-desc">Succulent prawns simmered in aromatic coconut-chili gravy, served for two with steaming rice, creamy dhal, crisp papadums, and freshly cooked Nuwara Eliya vegetable curries.<span class="price-nested">2800</span></p>
+        </article>
+
+        <article class="menu-item" data-tags="sharing">
+          <div class="badges-wrap">
+            <span class="badge badge-favorite">🔥 Terrace Favorite</span>
+            <span class="badge badge-bundle">Generous Feast for 2</span>
+          </div>
+          <h3 class="item-title">Island Fish Rice &amp; Curry Feast</h3>
+          <p class="item-desc">Traditional Ceylon fish curry paired with fluffy steamed rice and a full spread of comforting market-fresh vegetable curries, dhal, and sambols for two.<span class="price-nested">2800</span></p>
+        </article>
+
+        <article class="menu-item" data-tags="sharing">
+          <div class="badges-wrap">
+            <span class="badge badge-bundle">Generous Feast for 2</span>
+          </div>
+          <h3 class="item-title">Home-Style Village Chicken Rice &amp; Curry Feast</h3>
+          <p class="item-desc">Slow-simmered roasted-spice chicken curry served with steaming mounds of rice and wholesome hill-station vegetable sides for two guests.<span class="price-nested">2300</span></p>
+        </article>
+
+        <article class="menu-item" data-tags="sharing">
+          <div class="badges-wrap">
+            <span class="badge badge-bundle">Generous Feast for 2</span>
+          </div>
+          <h3 class="item-title">Nuwara Eliya Harvest Vegetable Rice &amp; Curry Feast</h3>
+          <p class="item-desc">A celebration of local highland produce featuring creamy dhal, tempered seasonal garden vegetables, sambol, papadum, and steaming rice for two.<span class="price-nested">1800</span></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 6. CHINESE FRIED RICE & NASI GORENG (SERVING 2 PERSONS) -->
+    <section class="menu-section" id="sec-friedrice-nasi">
+      <div class="section-banner" onclick="toggleSection(this)">
+        <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=900&q=80" alt="Wok-Fired Nasi Goreng and Fried Rice" onerror="this.style.display='none'" />
+        <div class="section-banner-overlay">
+          <div class="section-Header-row">
+            <div>
+              <h2 class="section-title">Wok-Fired Fried Rice &amp; Nasi Goreng</h2>
+              <p class="section-sub">Generous Platter for 2 • Tossed over high flame with crisp mountain leeks</p>
+            </div>
+            <span class="accordion-toggle">▾</span>
+          </div>
+        </div>
+      </div>
+      <div class="section-items">
+        <article class="menu-item highlight-box" data-tags="signature sharing">
+          <img class="signature-thumb" src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=800&q=80" alt="Sizzling Seafood Nasi Goreng Platter" onerror="this.style.display='none'" />
+          <div class="badges-wrap">
+            <span class="badge badge-signature">⭐ Summer Glow Signature</span>
+            <span class="badge badge-bundle">Generous Platter for 2</span>
+          </div>
+          <h3 class="item-title">Indonesian-Style Seafood Nasi Goreng</h3>
+          <p class="item-desc">Fragrant rice wok-tossed with juicy prawns, tender cuttlefish, sweet soy, and aromatic chili paste, crowned with a golden fried egg—crafted to share for two.<span class="price-nested">3000</span></p>
+        </article>
+
+        <article class="menu-item highlight-box" data-tags="signature sharing">
+          <div class="badges-wrap">
+            <span class="badge badge-favorite">🔥 Terrace Favorite</span>
+            <span class="badge badge-bundle">Generous Platter for 2</span>
+          </div>
+          <h3 class="item-title">Emperor's Mixed Meat &amp; Seafood Fried Rice</h3>
+          <p class="item-desc">Our most abundant wok platter combining tender chicken, ocean seafood, farm eggs, and crisp Nuwara Eliya carrots and leeks for two.<span class="price-nested">3000</span></p>
+        </article>
+
+        <article class="menu-item" data-tags="sharing">
+          <div class="badges-wrap">
+            <span class="badge badge-bundle">Generous Platter for 2</span>
+          </div>
+          <h3 class="item-title">Spiced Chicken Nasi Goreng</h3>
+          <p class="item-desc">Savory wok-seared rice infused with chili-garlic aromatics, tender diced chicken, and spring onions, topped with a crispy fried egg for two.<span class="price-nested">2500</span></p>
+        </article>
+
+        <article class="menu-item" data-tags="sharing">
+          <div class="badges-wrap">
+            <span class="badge badge-bundle">Generous Platter for 2</span>
+          </div>
+          <h3 class="item-title">Coastal Seafood Wok Fried Rice</h3>
+          <p class="item-desc">Fluffy basmati rice stir-fried over high heat with ocean prawns, fish, egg ribbons, and garden-fresh highland vegetables for two.<span class="price-nested">2200</span></p>
+        </article>
+
+        <article class="menu-item" data-tags="sharing">
+          <div class="badges-wrap">
+            <span class="badge badge-bundle">Generous Platter for 2</span>
+          </div>
+          <h3 class="item-title">Classic Roast Chicken Fried Rice</h3>
+          <p class="item-desc">Aromatic wok-tossed rice studded with seasoned chicken strips, scrambled farm egg, and sweet mountain leeks for two.<span class="price-nested">1900</span></p>
+        </article>
+
+        <article class="menu-item" data-tags="sharing">
+          <div class="badges-wrap">
+            <span class="badge badge-bundle">Generous Platter for 2</span>
+          </div>
+          <h3 class="item-title">Golden Farm Egg Fried Rice</h3>
+          <p class="item-desc">Light, fragrant rice wok-fried with fluffy golden egg ribbons, garlic, and finely julienned hill-country vegetables for two.<span class="price-nested">1600</span></p>
+        </article>
+
+        <article class="menu-item" data-tags="sharing">
+          <div class="badges-wrap">
+            <span class="badge badge-bundle">Generous Platter for 2</span>
+          </div>
+          <h3 class="item-title">Highland Garden Vegetable Fried Rice</h3>
+          <p class="item-desc">Crisp carrots, cabbage, beans, and leeks harvested from local Nuwara Eliya farms, wok-tossed with fragrant seasoned rice for two.<span class="price-nested">1200</span></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 7. BITES & DEVILLED SPECIALTIES -->
+    <section class="menu-section" id="sec-devilled">
+      <div class="section-banner" onclick="toggleSection(this)">
+        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80" alt="Sizzling Devilled Platters and Spicy Bites" onerror="this.style.display='none'" />
+        <div class="section-banner-overlay">
+          <div class="section-Header-row">
+            <div>
+              <h2 class="section-title">Sizzling Devilled Platters &amp; Bites</h2>
+              <p class="section-sub">Fiery, sweet-and-tangy Sri Lankan wok specialties • Ideal for chilly nights</p>
+            </div>
+            <span class="accordion-toggle">▾</span>
+          </div>
+        </div>
+      </div>
+      <div class="section-items">
+        <article class="menu-item highlight-box" data-tags="signature sharing">
+          <div class="badges-wrap">
+            <span class="badge badge-signature">⭐ Summer Glow Signature</span>
+            <span class="badge badge-bundle">300g Sharing Skillet</span>
+          </div>
+          <h3 class="item-title">Black-Pepper &amp; Onion Highland Mutton Fry</h3>
+          <p class="item-desc">A 300g sizzling iron-skillet delicacy: tender morsels of mutton dry-roasted with crushed Ceylon black pepper, caramelized red shallots, curry leaves, and green chilies.<span class="price-nested">3500</span></p>
+        </article>
+
+        <article class="menu-item" data-tags="sharing">
+          <div class="badges-wrap">
+            <span class="badge badge-favorite">🔥 Terrace Favorite</span>
+            <span class="badge badge-bundle">300g Sharing Platter</span>
+          </div>
+          <h3 class="item-title">Sizzling Wok-Devilled King Prawns</h3>
+          <p class="item-desc">300g of plump ocean prawns flash-fried and glazed in a fiery, sweet-and-tangy Sri Lankan devilled sauce with bell peppers and banana chilies.<span class="price-nested">3000</span></p>
+        </article>
+
+        <article class="menu-item" data-tags="sharing">
+          <div class="badges-wrap">
+            <span class="badge badge-bundle">300g Sharing Platter</span>
+          </div>
+          <h3 class="item-title">Crispy Devilled Ocean Fish</h3>
+          <p class="item-desc">300g of golden-fried fish cubes tossed over high heat with caramelized onions, juicy tomatoes, and our signature spicy chili-garlic glaze.<span class="price-nested">3000</span></p>
+        </article>
+
+        <article class="menu-item" data-tags="sharing">
+          <div class="badges-wrap">
+            <span class="badge badge-bundle">300g Sharing Platter</span>
+          </div>
+          <h3 class="item-title">Fiery Ceylon Devilled Chicken</h3>
+          <p class="item-desc">300g of crispy-seared chicken pieces wok-tossed with thick-cut onions, capsicum, crushed chili flakes, and a sticky, warming tomato-chili glaze.<span class="price-nested">2200</span></p>
+        </article>
+
+        <article class="menu-item">
+          <div class="badges-wrap">
+            <span class="badge badge-bundle">2 Jumbo Sausages</span>
+          </div>
+          <h3 class="item-title">Devilled Jumbo Chicken Sausages</h3>
+          <p class="item-desc">Two plump jumbo sausages sliced and pan-tossed with sweet onions, green chilies, and a tangy devilled pepper sauce.<span class="price-nested">1200</span></p>
+        </article>
+
+        <article class="menu-item">
+          <h3 class="item-title">Fluffy Two-Egg Masala Omelet</h3>
+          <p class="item-desc">Two farm-fresh eggs whisked with finely diced onions, green chilies, tomatoes, and cracked black pepper, pan-cooked until golden.<span class="price-nested">500</span></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 8. KOTTU & NOODLES CORNER -->
+    <section class="menu-section" id="sec-kottu-noodles">
+      <div class="section-banner" onclick="toggleSection(this)">
+        <img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=900&q=80" alt="Hot Griddle Kottu and Steaming Wok Noodles" onerror="this.style.display='none'" />
+        <div class="section-banner-overlay">
+          <div class="section-Header-row">
+            <div>
+              <h2 class="section-title">Griddle Kottu &amp; Wok Noodles</h2>
+              <p class="section-sub">Rhythmic iron-griddle kottu &amp; steaming hill-country noodle bowls</p>
+            </div>
+            <span class="accordion-toggle">▾</span>
+          </div>
+        </div>
+      </div>
+      <div class="section-items">
+        <div class="sub-group-label">Hot Griddle Kottu Corner</div>
+
+        <article class="menu-item highlight-box" data-tags="signature">
+          <div class="badges-wrap">
+            <span class="badge badge-signature">⭐ Summer Glow Signature</span>
+            <span class="badge badge-favorite">🔥 Evening Favorite</span>
+          </div>
+          <h3 class="item-title">Creamy Melted Chicken Cheese Kottu</h3>
+          <p class="item-desc">Chopped godamba rotti seared on a hot iron griddle with spiced roast chicken, crisp highland leeks, farm egg, aromatic curry gravy, and rich melted cheese.<span class="price-nested">1700</span></p>
+        </article>
+
+        <article class="menu-item">
+          <h3 class="item-title">Classic Spiced Chicken Kottu</h3>
+          <p class="item-desc">Steaming shredded flatbread tossed on the griddle with tender chicken pieces, egg, garden vegetables, and rich roasted curry gravy.<span class="price-nested">1200</span></p>
+        </article>
+
+        <article class="menu-item">
+          <h3 class="item-title">Sizzling Farm Egg Kottu</h3>
+          <p class="item-desc">Warm chopped rotti griddled with scrambled farm eggs, sweet onions, green chilies, and crisp Nuwara Eliya carrots and leeks.<span class="price-nested">900</span></p>
+        </article>
+
+        <article class="menu-item">
+          <h3 class="item-title">Highland Harvest Vegetable Kottu</h3>
+          <p class="item-desc">Freshly chopped flatbread stir-fried on the hot plate with locally-grown hill-country vegetables and fragrant curry spices.<span class="price-nested">700</span></p>
+        </article>
+
+        <div class="sub-group-label">Wok Noodles &amp; Chop Suey (Individual Portion)</div>
+
+        <article class="menu-item">
+          <div class="badges-wrap">
+            <span class="badge badge-favorite">🔥 Terrace Favorite</span>
+          </div>
+          <h3 class="item-title">Wok-Tossed Coastal Seafood Noodles</h3>
+          <p class="item-desc">Steaming noodles stir-fried with prawns, tender fish, egg ribbons, and crisp highland cabbage, carrots, and leeks.<span class="price-nested">1300</span></p>
+        </article>
+
+        <article class="menu-item">
+          <h3 class="item-title">Savory Roast Chicken Noodles</h3>
+          <p class="item-desc">Springy noodles wok-seared with tender chicken strips, farm egg, and crunchy mountain garden vegetables.<span class="price-nested">1050</span></p>
+        </article>
+
+        <article class="menu-item">
+          <h3 class="item-title">Glazed Highland Vegetable Chop Suey</h3>
+          <p class="item-desc">A colorful medley of crisp Nuwara Eliya cauliflower, carrots, leeks, and beans simmered in a glossy, savory garlic-ginger gravy.<span class="price-nested">1000</span></p>
+        </article>
+
+        <article class="menu-item">
+          <h3 class="item-title">Golden Egg Ribbon Noodles</h3>
+          <p class="item-desc">Comforting wok-tossed noodles with fluffy scrambled eggs, spring onions, and julienned garden vegetables.<span class="price-nested">850</span></p>
+        </article>
+
+        <article class="menu-item">
+          <h3 class="item-title">Garden-Fresh Vegetable Noodles</h3>
+          <p class="item-desc">Light and aromatic noodles tossed over high flame with crisp locally-harvested hill-country vegetables.<span class="price-nested">700</span></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 9. INDIAN & HOPPER CORNER -->
+    <section class="menu-section" id="sec-indian">
+      <div class="section-banner" onclick="toggleSection(this)">
+        <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=900&q=80" alt="Aromatic Chicken Biriyani and Ceylon Hoppers" onerror="this.style.display='none'" />
+        <div class="section-banner-overlay">
+          <div class="section-Header-row">
+            <div>
+              <h2 class="section-title">Aromatic Biriyani, Pittu &amp; Hoppers</h2>
+              <p class="section-sub">South Indian &amp; Ceylon artisan specialties • Individual Portions</p>
+            </div>
+            <span class="accordion-toggle">▾</span>
+          </div>
+        </div>
+      </div>
+      <div class="section-items">
+        <article class="menu-item highlight-box" data-tags="signature">
+          <img class="signature-thumb" src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80" alt="Royal Fragrant Chicken Biriyani" onerror="this.style.display='none'" />
+          <div class="badges-wrap">
+            <span class="badge badge-signature">⭐ Summer Glow Signature</span>
+            <span class="badge badge-bundle">Hearty Individual Feast</span>
+          </div>
+          <h3 class="item-title">Royal Aromatic Dum Chicken Biriyani</h3>
+          <p class="item-desc">Long-grain basmati rice slow-steamed with whole cardamom, cloves, mint, and spiced chicken, served piping hot with rich gravy and cooling accompaniments.<span class="price-nested">2200</span></p>
+        </article>
+
+        <article class="menu-item highlight-box" data-tags="signature">
+          <div class="badges-wrap">
+            <span class="badge badge-favorite">🔥 Chef's Specialty</span>
+          </div>
+          <h3 class="item-title">Steamed Bamboo Pittu with Jaffna-Style Crab Curry &amp; Kiri Hodi</h3>
+          <p class="item-desc">Warm, fluffy cylinders of steamed rice-and-coconut pittu paired with a deeply spiced ocean crab curry and velvety coconut kiri hodi.<span class="price-nested">1400</span></p>
+        </article>
+
+        <article class="menu-item">
+          <div class="badges-wrap">
+            <span class="badge badge-bundle">3 Plain + 1 Egg Hopper Set</span>
+          </div>
+          <h3 class="item-title">Crisp Bowl Hoppers Set with Seeni Sampol</h3>
+          <p class="item-desc">Three lace-edged plain hoppers and one warm bullseye egg hopper, served straight from the pan with sweet-and-spicy caramelized onion seeni sampol.<span class="price-nested">800</span></p>
+        </article>
+
+        <article class="menu-item">
+          <h3 class="item-title">Golden Crispy Dosa with Sambar &amp; Chutney</h3>
+          <p class="item-desc">Fermented rice-and-lentil crepe griddled until paper-crisp, served with piping-hot spiced vegetable sambar and fresh coconut chutney.<span class="price-nested">700</span></p>
+        </article>
+
+        <article class="menu-item">
+          <h3 class="item-title">Warm Griddle Chapathi with Spiced Potato Masala</h3>
+          <p class="item-desc">Soft whole-wheat flatbreads served off the skillet alongside a comforting, turmeric-spiced Nuwara Eliya potato masala.<span class="price-nested">700</span></p>
+        </article>
+
+        <article class="menu-item">
+          <h3 class="item-title">Traditional Steamed Pittu with Kiri Hodi</h3>
+          <p class="item-desc">Fragrant steamed coconut-and-rice flour pittu served warm with a soothing, fenugreek-infused coconut milk kiri hodi.<span class="price-nested">650</span></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 10. HOT BEVERAGES & FRESH TROPICAL JUICES -->
+    <section class="menu-section" id="sec-beverages">
+      <div class="section-banner" onclick="toggleSection(this)">
+        <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=900&q=80" alt="Steaming Nuwara Eliya Ceylon Tea and Fresh Juices" onerror="this.style.display='none'" />
+        <div class="section-banner-overlay">
+          <div class="section-Header-row">
+            <div>
+              <h2 class="section-title">High-Grown Ceylon Tea &amp; Fresh Juices</h2>
+              <p class="section-sub">Steaming estate brews &amp; freshly pressed island fruits</p>
+            </div>
+            <span class="accordion-toggle">▾</span>
+          </div>
+        </div>
+      </div>
+      <div class="section-items">
+        <div class="sub-group-label">Steaming Highland Cups</div>
+
+        <article class="menu-item highlight-box" data-tags="signature">
+          <div class="badges-wrap">
+            <span class="badge badge-signature">⭐ Nuwara Eliya Essential</span>
+          </div>
+          <h3 class="item-title">Cup of Velvety Ceylon Milk Tea</h3>
+          <p class="item-desc">High-grown Nuwara Eliya black tea leaves steeped strong and whisked with steaming, frothy creamy milk.<span class="price-nested">200</span></p>
+        </article>
+
+        <article class="menu-item">
+          <h3 class="item-title">Cup of Rich Roasted Milk Coffee</h3>
+          <p class="item-desc">Aromatic dark-roasted island coffee blended with piping-hot creamy milk for a cozy mountain pick-me-up.<span class="price-nested">250</span></p>
+        </article>
+
+        <article class="menu-item">
+          <h3 class="item-title">Cup of Pure Single-Origin Black Tea</h3>
+          <p class="item-desc">Bright, floral, golden-liquor Nuwara Eliya estate black tea served steaming hot.<span class="price-nested">125</span></p>
+        </article>
+
+        <div class="sub-group-label">Freshly Pressed Orchard Juices</div>
+
+        <article class="menu-item">
+          <div class="badges-wrap">
+            <span class="badge badge-favorite">🔥 Guest Favorite • Seasonal</span>
+          </div>
+          <h3 class="item-title">Velvety Highland Avocado Nectar</h3>
+          <p class="item-desc">Ripe, buttery seasonal hill-country avocados blended smooth and chilled.<span class="price-nested">790</span></p>
+        </article>
+
+        <article class="menu-item">
+          <h3 class="item-title">Sun-Ripened Golden Pineapple Juice</h3>
+          <p class="item-desc">Freshly pressed sweet-and-tangy tropical pineapple bursting with vibrant island flavor.<span class="price-nested">790</span></p>
+        </article>
+
+        <article class="menu-item">
+          <h3 class="item-title">Chilled Red Watermelon Juice (Seasonal)</h3>
+          <p class="item-desc">Crisp, naturally sweet seasonal watermelon pressed fresh to order.<span class="price-nested">690</span></p>
+        </article>
+
+        <article class="menu-item">
+          <h3 class="item-title">Orchard-Fresh Papaya Juice</h3>
+          <p class="item-desc">Smooth, sun-sweetened island papaya blended into a refreshing tropical drink.<span class="price-nested">690</span></p>
+        </article>
+
+        <article class="menu-item">
+          <h3 class="item-title">Zesty Ceylon Garden Lime Cooler</h3>
+          <p class="item-desc">Freshly squeezed aromatic island limes balanced with pure mountain water and a touch of sweetness.<span class="price-nested">690</span></p>
+        </article>
+
+        <article class="menu-item">
+          <h3 class="item-title">Whole Golden King Coconut (Thambili)</h3>
+          <p class="item-desc">Nature's purest hydrator—served fresh in the shell straight from the palm.<span class="price-nested">500</span></p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER WITH 10% SERVICE CHARGE NOTE -->
+  <footer class="menu-footer">
+    <p class="service-charge-note">Kindly note: A 10% Service Charge is applicable to all orders.</p>
+    <p class="footer-sub">Every dish at Summer Glow Guest is prepared fresh to order in our villa kitchen. Please inform our team of any dietary preferences or allergies.</p>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BAR (DIRECT CHAT OR LIVE ORDER TRAY) -->
+  <div class="floating-wa-wrap">
+    <a id="waDirectBtn" class="wa-direct-pill" href="https://wa.me/94771840842?text=Hello%20Summer%20Glow%20Guest%20Kitchen%2C%20I%20would%20like%20to%20place%20an%20order." target="_blank" rel="noopener">
+      <span>💬 Order on WhatsApp</span>
+    </a>
+
+    <div id="waCartBar" class="wa-cart-bar" onclick="openOrderModal()">
+      <div class="wa-cart-info">
+        <span class="wa-cart-count" id="barItemCount">0 Dishes Selected</span>
+        <span class="wa-cart-total" id="barTotalAmount">Total: 0 (incl. 10% SC)</span>
+      </div>
+      <div class="wa-cart-cta">
+        <span>Review &amp; WhatsApp ▸</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE-UP WHATSAPP ORDER MODAL -->
+  <div id="orderModalBackdrop" class="order-modal-backdrop" onclick="handleBackdropClick(event)">
+    <div class="order-sheet">
+      <div class="sheet-header">
+        <h3>🌲 Your Summer Glow Order</h3>
+        <button type="button" class="sheet-close" onclick="closeOrderModal()" aria-label="Close">✕</button>
+      </div>
+      <div class="sheet-body">
+        <div id="cartItemsList"></div>
+
+        <div class="bill-summary">
+          <div class="bill-row">
+            <span>Dishes Subtotal</span>
+            <span id="modalSubtotal">0</span>
+          </div>
+          <div class="bill-row">
+            <span>Service Charge (10%)</span>
+            <span id="modalServiceCharge">0</span>
+          </div>
+          <div class="bill-row grand">
+            <span>Estimated Total</span>
+            <span id="modalGrandTotal">0</span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="guestLocation">Room or Table Location</label>
+          <select id="guestLocation" class="form-select">
+            <option value="Room 1">Room 1</option>
+            <option value="Room 2">Room 2</option>
+            <option value="Room 3">Room 3</option>
+            <option value="Room 4">Room 4</option>
+            <option value="Room 5">Room 5</option>
+            <option value="Luxury Apartment">Luxury Apartment</option>
+            <option value="Terrace Table">Terrace Table</option>
+            <option value="Main Dining Room">Main Dining Room</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="guestNotes">Special Requests / Serving Time (Optional)</label>
+          <input type="text" id="guestNotes" class="form-input" placeholder="e.g., Less spicy, serve at 7:30 PM, extra hot tea..." />
+        </div>
+      </div>
+      <div class="sheet-footer">
+        <button type="button" class="clear-cart-btn" onclick="clearCart()">Clear</button>
+        <button type="button" class="send-wa-btn" onclick="sendOrderToWhatsApp()">
+          <span>💬 Send Order on WhatsApp</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- INTERACTIVE FILTER, ACCORDION, SEARCH & WHATSAPP CART LOGIC -->
+  <script>
+    const WHATSAPP_NUMBER = '94771840842';
+    const cart = {}; // { dishTitle: { title, price, qty } }
+
+    function toggleSection(bannerEl) {
+      const section = bannerEl.closest('.menu-section');
+      section.classList.toggle('collapsed');
+    }
+
+    // Initialize "+ Add to Order" buttons on every dish card & menu item
+    function initOrderButtons() {
+      const allDishNodes = document.querySelectorAll('.gt-card-body, .menu-item');
+
+      allDishNodes.forEach(node => {
+        const titleEl = node.querySelector('h3');
+        const priceEl = node.querySelector('.price-nested, .inline-price-light');
+        if (!titleEl || !priceEl) return;
+
+        const title = titleEl.innerText.trim();
+        const price = parseInt(priceEl.innerText.replace(/[^0-9]/g, ''), 10) || 0;
+
+        node.setAttribute('data-dish-title', title);
+        node.setAttribute('data-dish-price', price);
+
+        const actionRow = document.createElement('div');
+        actionRow.className = 'order-action-row';
+        node.appendChild(actionRow);
+      });
+
+      renderAllDishControls();
+    }
+
+    function changeQty(title, price, delta) {
+      if (!cart[title]) {
+        cart[title] = { title, price, qty: 0 };
+      }
+      cart[title].qty += delta;
+      if (cart[title].qty <= 0) {
+        delete cart[title];
+      }
+      renderAllDishControls();
+      updateFloatingBar();
+      if (document.getElementById('orderModalBackdrop').classList.contains('open')) {
+        renderModalCartList();
+      }
+    }
+
+    function renderAllDishControls() {
+      const allDishNodes = document.querySelectorAll('[data-dish-title]');
+      allDishNodes.forEach(node => {
+        const title = node.getAttribute('data-dish-title');
+        const price = parseInt(node.getAttribute('data-dish-price'), 10);
+        const actionRow = node.querySelector('.order-action-row');
+        if (!actionRow) return;
+
+        const currentQty = cart[title] ? cart[title].qty : 0;
+        const safeTitle = title.replace(/'/g, "\\'");
+
+        if (currentQty === 0) {
+          actionRow.innerHTML = `
+            <button type="button" class="add-order-btn" onclick="changeQty('${safeTitle}', ${price}, 1)">
+              <span>+ Add to Order</span>
+            </button>
+          `;
+        } else {
+          actionRow.innerHTML = `
+            <div class="qty-stepper">
+              <button type="button" class="stepper-btn" onclick="changeQty('${safeTitle}', ${price}, -1)" aria-label="Decrease quantity">−</button>
+              <span class="stepper-count">${currentQty} Added</span>
+              <button type="button" class="stepper-btn" onclick="changeQty('${safeTitle}', ${price}, 1)" aria-label="Increase quantity">+</button>
+            </div>
+          `;
+        }
+      });
+    }
+
+    function getCartTotals() {
+      let totalItems = 0;
+      let subtotal = 0;
+      Object.values(cart).forEach(item => {
+        totalItems += item.qty;
+        subtotal += item.price * item.qty;
+      });
+      const serviceCharge = Math.round(subtotal * 0.10);
+      const grandTotal = subtotal + serviceCharge;
+      return { totalItems, subtotal, serviceCharge, grandTotal };
+    }
+
+    function updateFloatingBar() {
+      const { totalItems, grandTotal } = getCartTotals();
+      const directBtn = document.getElementById('waDirectBtn');
+      const cartBar = document.getElementById('waCartBar');
+
+      if (totalItems === 0) {
+        directBtn.style.display = 'flex';
+        cartBar.style.display = 'none';
+        closeOrderModal();
+      } else {
+        directBtn.style.display = 'none';
+        cartBar.style.display = 'flex';
+        document.getElementById('barItemCount').innerText = `${totalItems} ${totalItems === 1 ? 'Dish' : 'Dishes'} in Order`;
+        document.getElementById('barTotalAmount').innerText = `Total: ${grandTotal} (incl. 10% SC)`;
+      }
+    }
+
+    function openOrderModal() {
+      renderModalCartList();
+      document.getElementById('orderModalBackdrop').classList.add('open');
+    }
+
+    function closeOrderModal() {
+      document.getElementById('orderModalBackdrop').classList.remove('open');
+    }
+
+    function handleBackdropClick(e) {
+      if (e.target.id === 'orderModalBackdrop') {
+        closeOrderModal();
+      }
+    }
+
+    function renderModalCartList() {
+      const container = document.getElementById('cartItemsList');
+      const items = Object.values(cart);
+
+      if (items.length === 0) {
+        container.innerHTML = '<p style="text-align:center;color:#5C645E;padding:12px 0;">Your order tray is empty.</p>';
+      } else {
+        container.innerHTML = items.map(item => {
+          const safeTitle = item.title.replace(/'/g, "\\'");
+          const lineTotal = item.price * item.qty;
+          return `
+            <div class="cart-item-row">
+              <div>
+                <div class="cart-item-name">${item.title}</div>
+                <div class="cart-item-sub">${item.price} × ${item.qty} = <strong>${lineTotal}</strong></div>
+              </div>
+              <div class="qty-stepper">
+                <button type="button" class="stepper-btn" onclick="changeQty('${safeTitle}', ${item.price}, -1)">−</button>
+                <span class="stepper-count">${item.qty}</span>
+                <button type="button" class="stepper-btn" onclick="changeQty('${safeTitle}', ${item.price}, 1)">+</button>
+              </div>
+            </div>
+          `;
+        }).join('');
+      }
+
+      const { subtotal, serviceCharge, grandTotal } = getCartTotals();
+      document.getElementById('modalSubtotal').innerText = subtotal;
+      document.getElementById('modalServiceCharge').innerText = serviceCharge;
+      document.getElementById('modalGrandTotal').innerText = grandTotal;
+    }
+
+    function clearCart() {
+      Object.keys(cart).forEach(k => delete cart[k]);
+      renderAllDishControls();
+      updateFloatingBar();
+    }
+
+    function sendOrderToWhatsApp() {
+      const items = Object.values(cart);
+      if (items.length === 0) return;
+
+      const location = document.getElementById('guestLocation').value;
+      const notes = document.getElementById('guestNotes').value.trim();
+      const { subtotal, serviceCharge, grandTotal } = getCartTotals();
+
+      let lines = [
+        '🌲 *SUMMER GLOW GUEST — DINING ORDER* 🌲',
+        `📍 *Location:* ${location}`,
+        '────────────────────'
+      ];
+
+      items.forEach(item => {
+        lines.push(`• ${item.qty}x ${item.title} (${item.price * item.qty})`);
+      });
+
+      lines.push('────────────────────');
+      lines.push(`Subtotal: ${subtotal}`);
+      lines.push(`Service Charge (10%): ${serviceCharge}`);
+      lines.push(`*Estimated Total: ${grandTotal}*`);
+
+      if (notes) {
+        lines.push(`📝 *Guest Notes:* ${notes}`);
+      }
+
+      const encodedText = encodeURIComponent(lines.join('\n'));
+      window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodedText}`, '_blank');
+    }
+
+    // Live Search & Category Filter
+    const searchInput = document.getElementById('menuSearch');
+    const filterButtons = document.querySelectorAll('.nav-pill[data-filter]');
+    const sections = document.querySelectorAll('.menu-section');
+
+    function filterMenu(searchTerm, tagFilter) {
+      const query = searchTerm.trim().toLowerCase();
+
+      sections.forEach(section => {
+        const items = section.querySelectorAll('.menu-item');
+        let visibleCount = 0;
+
+        items.forEach(item => {
+          const text = item.innerText.toLowerCase();
+          const tags = (item.getAttribute('data-tags') || '').toLowerCase();
+          const matchesSearch = !query || text.includes(query);
+          const matchesTag = tagFilter === 'all' || tags.includes(tagFilter);
+
+          if (matchesSearch && matchesTag) {
+            item.style.display = '';
+            visibleCount++;
+          } else {
+            item.style.display = 'none';
+          }
+        });
+
+        if (visibleCount > 0) {
+          section.style.display = '';
+          if (query || tagFilter !== 'all') {
+            section.classList.remove('collapsed');
+          }
+        } else {
+          section.style.display = 'none';
+        }
+      });
+    }
+
+    let currentTag = 'all';
+
+    searchInput.addEventListener('input', (e) => {
+      filterMenu(e.target.value, currentTag);
+    });
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentTag = btn.getAttribute('data-filter');
+        filterMenu(searchInput.value, currentTag);
+      });
+    });
+
+    document.addEventListener('DOMContentLoaded', initOrderButtons);
+  </script>
+</body>
+</html>
